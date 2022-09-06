@@ -48,7 +48,7 @@ add_action( 'wp_enqueue_scripts', 'cbtu_enqueue_google_fonts' );
 function cbtu_enqueue_google_fonts() {
 
  $query_args = array(
-   'family' => 'Lato:400,700|Oswald:400,700'
+   'family' => 'Lato:400,700|Oswald:400,700|Roboto:400'
  );
 
  wp_register_style( 
@@ -95,7 +95,9 @@ if( function_exists( 'acf_add_options_page' ) ) {
 }
 
 function register_my_menu() {
-register_nav_menu('top-menu',__( 'Top Menu' ));
+    register_nav_menu('top-menu',__( 'Top Menu' ));
+    register_nav_menu('top-menu-v2',__( 'Top Menu V2' ));
+    register_nav_menu('main-menu-v2',__( 'Main Menu V2' ));
 }
 add_action( 'init', 'register_my_menu' );
 

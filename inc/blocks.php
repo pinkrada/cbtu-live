@@ -143,5 +143,24 @@ function cbtu_acf_init_block_types() {
 		'mode'              => 'edit',
 		'keywords'          => [ 'section', 'pla' ],
 	] );
+
+    //register custom heading block
+	acf_register_block_type( [
+		'name'              => 'cbtu-block-custom-heading',
+		'title'             => __( 'Custom Heading', 'cbtu' ),
+		'description'       => __( 'Custom Heading', 'cbtu' ),
+		'render_template'   => 'blocks/custom-heading.php',
+		'category'          => 'common',
+		'icon'              => 'heading',
+		'mode'              => 'edit',
+		'keywords'          => [ 'custom', 'heading' ],
+	] );
 }
 add_action( 'acf/init', 'cbtu_acf_init_block_types' );
+
+add_action('init', function() {
+    register_block_style('core/image', [
+      'name' => 'pushed-image-right',
+      'label' => __('Pushed image right', 'cbtu'),
+    ]);
+});

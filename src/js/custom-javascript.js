@@ -136,4 +136,33 @@ jQuery( document ).ready( function( $ ) {
     if($('#single-wrapper').length > 0 && $('.letter-writing').length > 0) {
         $('.letter-writing').insertBefore('#single-wrapper');
     }
+
+    let parallax_sections = document.querySelectorAll('.wp-block-group, .section-hero');
+    for (let parallax_section of parallax_sections) {
+      let instance = basicScroll.create({
+        elem: parallax_section,
+        from: 'top-middle',
+        to: 'bottom-middle',
+        direct: true,
+        props: {
+          '--ty': {
+            from: '0',
+            to: '50px',
+          },
+          '--scale': {
+            from: '1',
+            to: '1.5'
+          },
+          '--r': {
+            from: '0',
+            to: '1turn'
+          },
+          '--tx': {
+            from: '0',
+            to: '50px'
+         }
+        }
+      })
+      instance.start();
+    }
 } );

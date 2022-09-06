@@ -23,6 +23,7 @@ if ( ! function_exists( 'cbtu_scripts' ) ) {
 		wp_enqueue_script( 'jquery' );
 
 		$js_version = $theme_version . '.' . filemtime( get_template_directory() . '/js/theme.min.js' );
+		wp_enqueue_script( 'basicscroll', get_template_directory_uri() . '/js/basicscroll.min.js', array(), '', true );
 		wp_enqueue_script( 'cbtu-scripts', get_template_directory_uri() . '/js/theme.min.js', array(), $js_version, true );
 		wp_localize_script( 'cbtu-scripts', 'wpAjax', array( 'ajaxUrl' => admin_url( 'admin-ajax.php' ) ) );
 

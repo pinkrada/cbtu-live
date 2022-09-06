@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
         <div class="copyright">
-            <div class="copyright__text">© Copyright 2021. CBTU All Rights Reserved.</div>
+            <div class="copyright__text">© Copyright <?php echo date( 'Y' ); ?>. CBTU All Rights Reserved.</div>
             <div class="copyright__right">
                 <?php wp_nav_menu( array( 'theme_location' => 'footer_bottom', 'container' => '', 'menu_class' => 'footer-list' ) ); ?>
                 <ul class="social-icons align-items-center">

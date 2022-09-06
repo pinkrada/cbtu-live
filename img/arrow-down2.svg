@@ -1,0 +1,11 @@
+<svg id="Down-Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45.845" height="50.424" viewBox="0 0 45.845 50.424">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_997" data-name="Rectangle 997" width="45.845" height="50.424" fill="#e59f39"/>
+    </clipPath>
+  </defs>
+  <g id="Group_203" data-name="Group 203" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path id="Path_22" data-name="Path 22" d="M20.795,26.925,9.974,16a3,3,0,0,0-2.128-.889H3.016A3.042,3.042,0,0,0,.888,20.3L20.795,40.4a2.988,2.988,0,0,0,4.256,0L44.958,20.3a3.042,3.042,0,0,0-2.128-5.186H38A3,3,0,0,0,35.871,16L25.051,26.925a2.988,2.988,0,0,1-4.256,0" transform="translate(0 9.137)" fill="#e59f39"/>
+    <path id="Path_23" data-name="Path 23" d="M20.795,11.813,9.974.889A3,3,0,0,0,7.846,0H3.016A3.042,3.042,0,0,0,.888,5.186l19.907,20.1a2.988,2.988,0,0,0,4.256,0l19.907-20.1A3.042,3.042,0,0,0,42.83,0H38a3,3,0,0,0-2.128.889L25.051,11.813a2.988,2.988,0,0,1-4.256,0" transform="translate(0 0)" fill="#e59f39"/>
+  </g>
+</svg>

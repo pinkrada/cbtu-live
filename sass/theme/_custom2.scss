@@ -288,3 +288,822 @@
         font-size: 24px;
     }
 }
+
+//new
+@keyframes bounceCentered {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, -10px);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+.footer-v2 {
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logos {
+        display: flex;
+        margin-bottom: 10px;
+
+        img {
+            max-width: 100%;
+        }
+
+        div {
+            align-self: center;
+
+            &:last-of-type {
+                padding: 10px 0 10px 30px;
+                margin-left: 30px;
+                border-left: 1px solid rgba(255,255,255,.5);
+            }
+        }
+    }
+    
+    &__copyright {
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+}
+
+.section-newsletter-v2 {
+    padding: 50px 0;
+    color: #fff;
+    background-color: $teal;
+
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    &__heading {
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin-top: 15px;
+        font-size: 18px;
+
+        p:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    #mc_embed_signup form {
+        padding: 0;
+
+        .email {
+            padding: 10px 20px !important;
+            font-family: "proxima-nova";
+            font-size: 18px;
+            box-shadow: none;
+            border: 0;
+            border-radius: 50px;
+            outline: 0;
+        }
+
+        .btn-yellow {
+            margin-top: 0 !important;
+            padding: 10px 30px;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0;
+            background-color: $yellow;
+            border: 1px solid $yellow;
+            border-radius: 50px;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                color: $yellow;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.page-template-template-apprenticeship {
+    font-family: "proxima-nova";
+    font-weight: 100;
+    color: $darkgray;
+    background-color: #fff;
+
+    h2 {
+        line-height: 1.25;
+    }
+
+    .site {
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .section-hero {
+        position: relative;
+        padding-top: 230px;
+        margin-top: -200px;
+        color: #fff;
+        background: url('../img/banner-apprentice.jpg') no-repeat bottom right;
+        background-size: cover;
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .row {
+            align-items: center;
+        }
+
+        &__image {
+            position: relative;
+            margin-bottom: -100px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -34px;
+                left: 2.3vw;
+                width: 235px;
+                height: 90px;
+                background-color: $yellow;
+                border-radius: 50px;
+                transform: rotate(-45deg);
+            }
+        }
+
+        &__heading {
+            padding-bottom: 50px;
+            font-family: 'proxima-nova';
+            font-size: 3em;
+            line-height: 1;
+            color: #fff;
+
+            .outline-text {
+                position: relative;
+                display: block;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #fff;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    right: calc(100% - 40px);
+                    bottom: 5px;
+                    display: block;
+                    width: 300px;
+                    height: 42px;
+                    background-color: $yellow;
+                    border-radius: 50px;
+                    transform: translateX(calc((var(--tx) * -.7)));
+                    will-change: transform;
+                    transition: transform .1s linear;
+                }
+            }
+        }
+
+        &__arrow {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &:hover {
+                animation: bounceCentered 1s infinite;
+            }
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -25px;
+            right: -4vw;
+            width: 50vw;
+            height: 90px;
+            border: 2px solid $yellow;
+            border-radius: 50px;
+            transform: rotate(-45deg);
+            transform-origin: right;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -120px;
+            left: -30px;
+            width: 290px;
+            height: 100px;
+            border: 2px solid $teal;
+            border-radius: 50px;
+            transform: rotate(-45deg);
+            transform-origin: bottom left;
+        }
+    }
+
+    .main {
+        overflow-x: hidden;
+        font-size: 25px;
+
+        .wp-block {
+            &-group {
+                position: relative;
+                padding-top: 80px;
+                padding-bottom: 80px;
+        
+                &__inner-container {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 100%;
+                }
+        
+                h3 {
+                    margin-bottom: 20px;
+                    font-size: 32px;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: -50px;
+                    bottom: -49px;
+                    z-index: 1;
+                    width: 350px;
+                    height: 100px;
+                    border: 2px solid $yellow;
+                    border-radius: 50px;
+                    transform: translateY(calc((var(--ty) * -.7)));
+                    will-change: transform;
+                    transition: transform .1s linear;
+                }
+
+                &.no-shape:after {
+                    display: none;
+                }
+
+                &:nth-last-child(3) {
+                    background-image: url('../img/bg-oblongs.png');
+                    background-position: bottom right 50px;
+                    background-repeat: no-repeat;
+                    background-size: 18vw;
+
+                    &:after {
+                        right: auto;
+                        left: -50px;
+                        width: 250px;
+                    }
+                }
+            }
+
+            &-column:empty {
+                display: none;
+            }
+        }
+
+        h4 a {
+            font-weight: 300;
+            text-decoration: underline;
+        }
+    }
+
+    .accordion {
+        border-top: 0;
+
+        &-item {
+            background-color: #fff;
+            border: 0;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .accordion-header {
+                padding: 20px 30px;
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: $teal;
+                text-transform: uppercase;
+                border: 1px solid rgba(80,116,138,.25);
+                border-radius: 10px;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    height: 15px;
+                    background: url('../img/angle-down.svg') no-repeat center;
+                    background-size: contain;
+                    transition: .2s ease-in-out;
+                }
+
+                &[aria-expanded="true"] {
+                    border-color: $teal;
+                    border-bottom: 0;
+                    border-radius: 10px 10px 0 0;
+
+                    &:after {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .accordion-body {
+                padding: 0 30px 10px;
+                border: 1px solid $teal;
+                border-top: 0;
+                border-radius: 0 0 10px 10px;
+
+                p {
+                    max-width: 900px;
+                }
+            }
+
+            & + .accordion-item {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .gform_wrapper.gravity-theme {
+        .gform_description {
+            display: block;
+            margin-bottom: 40px;
+            max-width: 650px;
+            color: $darkgray;
+        }
+
+        .gfield_label {
+            padding-left: 20px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .gfield_required {
+            &:before {
+                content: '*';
+            }
+
+            &_text {
+                display: none;
+            }
+        }
+
+        .gfield_html {
+            margin-top: 10px;
+            font-size: 18px;
+            
+            a {
+                color: $darkgray;
+                text-decoration: underline;
+            }
+        }
+
+        .ginput_container input {
+            padding: 10px 20px !important;
+            font-size: 20px !important;
+            border: 1px solid rgba(80,116,138,.25);
+            border-radius: 10px;
+
+            &::placeholder {
+                color: rgba(67,67,67,.5);
+            }
+
+            &:focus {
+                border-color: $teal;
+                outline: 0;
+            }
+        }
+
+        .gform_button {
+            padding: 10px 30px;
+            font-family: 'proxima-nova';
+            font-weight: 700;
+            letter-spacing: 0;
+            background-color: $yellow;
+            border-radius: 50px;
+            border: 1px solid $yellow;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $yellow;
+                background-color: #fff;
+            }
+        }
+
+        .gform_validation_errors,
+        .validation_message {
+            font-size: 12px;
+            color: #be5c46;
+            background-color: #fff9f9;
+            border: 1px solid #fbc6bc;
+
+            & > h2 {
+                color: #be5c46;
+            }
+        }
+
+        .gfield_error .gfield_label {
+            padding-left: 0;
+            font-size: 12px;
+        }
+    }
+}
+
+.navbar-v2 {
+    z-index: 9;
+    padding-top: 30px;
+    background-color: transparent;
+
+    &__logos {
+        display: flex;
+        max-width: calc(100% - 100px);
+
+        div {
+            align-self: center;
+
+            &:last-of-type {
+                padding: 10px 0 10px 30px;
+                margin-left: 30px;
+                border-left: 1px solid rgba(255,255,255,.5);
+            }
+        }
+    }
+
+    #navbarCollapse {
+        background-color: transparent;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .hamburger .line {
+        background-color: #fff;
+    }
+
+    .topNav {
+        a {
+            font-family: 'Roboto';
+            font-size: 18px;
+        }
+
+        .wpml-ls-item a > span {
+            display: none;
+        }
+
+        a[title="FR"]:before {
+            content: 'Français';
+        }
+
+        a[title="EN"]:before {
+            content: 'English';
+        }
+    }
+    
+    .navbar-nav {
+        .nav-link {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+
+    .btn-yellow {
+        .nav-link {
+            padding: 10px 30px;
+            font-weight: 700;
+            letter-spacing: 0;
+            background-color: $yellow;
+            border: 1px solid $yellow !important;
+            border-radius: 50px;
+            transition: .2s ease-in-out;
+
+            &:before {
+                opacity: 0 !important;
+            }
+    
+            &:hover {
+                color: $yellow !important;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.custom-heading {
+    margin-bottom: 40px;
+    color: $dark-blue;
+
+    span {
+        display: block;
+    }
+
+    .outline-text {
+        position: relative;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $dark-blue;
+    }
+
+    &__border {
+        position: absolute;
+        right: 100%;
+        bottom: 0;
+        margin: auto 30px auto 0;
+        width: 300px;
+        height: 90%;
+        background-color: $yellow;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .section-newsletter-v2 {
+        #mc_embed_signup form {
+            .email {
+                margin-right: 15px !important;
+            }
+        }
+    }
+
+    .page-template-template-apprenticeship .main .wp-block-group__inner-container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .page-template-template-apprenticeship {
+        .main .wp-block-group__inner-container {
+            max-width: 720px;
+        }
+
+        .accordion-item .accordion-header {
+            font-size: 26px;
+
+            &:after {
+                width: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .section-newsletter-v2 {
+        &__heading {
+            margin-top: 30px;
+        }
+
+        #mc_embed_signup form {
+            .email {
+                margin-right: 15px !important;
+            }
+        }
+    }
+
+    .page-template-template-apprenticeship .main .wp-block {
+        &-group__inner-container {
+            max-width: 960px;
+        }
+
+        &-image {
+            &.is-style-pushed-image-right {
+                margin-right: calc(90% - 50vw);
+            }
+        }
+    }
+
+    .navbar-v2 {
+        .topNav {
+            margin-top: -30px;
+            margin-bottom: 20px;
+        }
+
+        .navbar-nav {
+            .nav-item {
+                margin-left: 15px;
+            }
+        }
+
+        &__logos {
+            max-width: 40%;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-newsletter-v2 {
+        &__heading {
+            font-size: 48px;
+        }
+
+        .col-lg-7 {
+            padding-left: 40px;
+        }
+    }
+
+    .page-template-template-apprenticeship {
+        .main .wp-block-group__inner-container {
+            max-width: 1140px;
+    
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .section-hero__heading {
+            font-size: 4em;
+
+            .outline-text:before {
+                height: 60px;
+            }
+        }
+    }
+
+    .custom-heading {
+        font-size: 48px;
+    }
+
+    .navbar-v2 {
+        .navbar-nav .nav-link {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .custom-heading {
+        padding-left: 40px;
+
+        &__border {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .section-newsletter-v2__heading {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-v2 {
+        #navbarCollapse {
+            background-color: $dark-blue;
+        }
+    }
+
+    .page-template-template-apprenticeship {
+        .main .wp-block {
+            &-image {
+                img {
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+
+            &-group:after {
+                bottom: -39px;
+                height: 80px;
+            }
+        }
+
+        .section-hero {
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .page-template-template-apprenticeship {
+        .section-hero {
+            margin-bottom: 90px;
+
+            &__heading {
+                font-size: 2.5em;
+
+                .outline-text:before {
+                    height: 36px;
+                }
+            }
+
+            &__image {
+                margin-bottom: -70px;
+
+                &:after {
+                    bottom: -18px;
+                    width: 200px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page-template-template-apprenticeship {
+        .main {
+            font-size: 20px;
+            
+            .wp-block {
+                &-group {
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+
+                    &:after {
+                        bottom: -29px;
+                        height: 60px;
+                        width: 200px;
+                    }
+
+                    &:nth-last-child(3):after {
+                        width: 200px;
+                    }
+                }
+            }
+
+            h2.has-large-font-size {
+                font-size: 30px !important;
+            }
+        }
+
+        .section-hero {
+            margin-bottom: 60px;
+    
+            &__heading {
+                font-size: 2.5em;
+    
+                .outline-text:before {
+                    bottom: 3px;
+                    height: 38px;
+                }
+            }
+    
+            &__image {
+                margin-bottom: -45px;
+    
+                img {
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                    max-height: 300px;
+                }
+    
+                &:after {
+                    bottom: -15px;
+                    left: calc(50% - 80px);
+                    width: 120px;
+                    height: 50px;
+                }
+            }
+
+            &__arrow {
+                position: relative;
+                bottom: 25px;
+
+                img {
+                    width: 30px;
+                }
+            }
+        }
+
+        .gform_wrapper.gravity-theme .gform_button {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .section-newsletter-v2 {
+        #mc_embed_signup form {
+            .email {
+                margin-bottom: 10px !important;
+            }
+        }
+    }
+
+    .navbar-v2__logos div:last-of-type {
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+}
