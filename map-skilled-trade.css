@@ -1,0 +1,12 @@
+#map_canada_cbtu {
+    padding-bottom: 50px;
+}
+#map_canada_cbtu .jsmaps-text {
+    display: none !important
+}
+.carousel-slick img {
+    max-width: 100%;
+}
+.carousel-slick .slick-arrow:before {
+    color: #222944;
+}

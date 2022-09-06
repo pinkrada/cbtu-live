@@ -1,0 +1,11 @@
+.wp-block-button__link {
+  padding: 7px 25px;
+  font-family: 'Oswald';
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: #50748a;
+  border: 1px solid #50748a;
+  -moz-border-radius: 3px;
+       border-radius: 3px; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImN1c3RvbS1lZGl0b3Itc3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHQTtFQUNJLGlCQUFpQjtFQUNqQixxQkFBcUI7RUFDckIsbUJBQW1CO0VBQ25CLHlCQUF5QjtFQUN6Qix5QkFBeUI7RUFDNUIseUJBQXlCO0VBQ3pCLHVCQUFrQjtPQUFsQixrQkFBa0IsRUFBQSIsImZpbGUiOiJjdXN0b20tZWRpdG9yLXN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8vQWRkIHlvdXIgb3duIGVkaXRvciBzdHlsZXMgaGVyZSBvciBjb21tZW50IG91dCB0aGUgbmV4dCBsaW5lIGlmIHlvdSB3YW50IHRvIHB1bGwgaW4gdGhlIHdob2xlIEJvb3RzdHJhcCBzdHVmZlxuLy9AaW1wb3J0IFwidGhlbWVcIjsgXG5cbi53cC1ibG9jay1idXR0b25fX2xpbmsge1xuICAgIHBhZGRpbmc6IDdweCAyNXB4O1xuICAgIGZvbnQtZmFtaWx5OiAnT3N3YWxkJztcbiAgICBsZXR0ZXItc3BhY2luZzogM3B4O1xuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzUwNzQ4YTtcblx0Ym9yZGVyOiAxcHggc29saWQgIzUwNzQ4YTtcblx0Ym9yZGVyLXJhZGl1czogM3B4O1xufSJdfQ== */
